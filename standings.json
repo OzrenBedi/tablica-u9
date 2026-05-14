@@ -1,0 +1,134 @@
+[
+  {
+    "team": "NC SRAČINEC-SVIBOVEC",
+    "played": 19,
+    "wins": 18,
+    "draws": 1,
+    "losses": 0,
+    "gf": 168,
+    "ga": 21,
+    "gd": 147,
+    "points": 55
+  },
+  {
+    "team": "NC VIDOVEC",
+    "played": 19,
+    "wins": 15,
+    "draws": 1,
+    "losses": 3,
+    "gf": 138,
+    "ga": 32,
+    "gd": 106,
+    "points": 46
+  },
+  {
+    "team": "NC VARAŽDINSKE TOPLICE",
+    "played": 19,
+    "wins": 13,
+    "draws": 2,
+    "losses": 4,
+    "gf": 112,
+    "ga": 45,
+    "gd": 67,
+    "points": 41
+  },
+  {
+    "team": "NC Jalžabet/Martijanec",
+    "played": 19,
+    "wins": 12,
+    "draws": 2,
+    "losses": 5,
+    "gf": 118,
+    "ga": 52,
+    "gd": 66,
+    "points": 38
+  },
+  {
+    "team": "NC CESTICA",
+    "played": 19,
+    "wins": 11,
+    "draws": 2,
+    "losses": 6,
+    "gf": 89,
+    "ga": 58,
+    "gd": 31,
+    "points": 35
+  },
+  {
+    "team": "NC ŠN PETRIJANEC-NOVA VES",
+    "played": 19,
+    "wins": 10,
+    "draws": 3,
+    "losses": 6,
+    "gf": 78,
+    "ga": 55,
+    "gd": 23,
+    "points": 33
+  },
+  {
+    "team": "NC SVETI ĐURĐ",
+    "played": 19,
+    "wins": 9,
+    "draws": 2,
+    "losses": 8,
+    "gf": 72,
+    "ga": 68,
+    "gd": 4,
+    "points": 29
+  },
+  {
+    "team": "NC BELETINEC-MARGEČAN-PODEVČEVO",
+    "played": 19,
+    "wins": 7,
+    "draws": 3,
+    "losses": 9,
+    "gf": 58,
+    "ga": 72,
+    "gd": -14,
+    "points": 24
+  },
+  {
+    "team": "NC IVANEC",
+    "played": 19,
+    "wins": 6,
+    "draws": 2,
+    "losses": 11,
+    "gf": 52,
+    "ga": 85,
+    "gd": -33,
+    "points": 20
+  },
+  {
+    "team": "NC TRNOVEC",
+    "played": 19,
+    "wins": 4,
+    "draws": 3,
+    "losses": 12,
+    "gf": 45,
+    "ga": 98,
+    "gd": -53,
+    "points": 15
+  },
+  {
+    "team": "NC LUDBREG",
+    "played": 19,
+    "wins": 3,
+    "draws": 2,
+    "losses": 14,
+    "gf": 38,
+    "ga": 112,
+    "gd": -74,
+    "points": 11
+  },
+  {
+    "team": "NK ZELENGAJ DONJI KUĆAN",
+    "played": 19,
+    "wins": 0,
+    "draws": 1,
+    "losses": 18,
+    "gf": 15,
+    "ga": 185,
+    "gd": -170,
+    "points": 1
+  }
+]
