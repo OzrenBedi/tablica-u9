@@ -28,22 +28,22 @@ export default function Home() {
   const standings = getStandings()
 
   return (
-    <main className="min-h-screen py-8 px-4">
+    <main className="min-h-screen py-8 px-4 bg-background">
       <div className="max-w-5xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             Tablica Pocetnici U-9
           </h1>
-          <p className="text-[var(--muted-foreground)]">
+          <p className="text-muted-foreground">
             Sezona 2024/2025 - Nakon 19. kola
           </p>
         </header>
 
-        <div className="bg-[var(--card)] rounded-xl shadow-lg overflow-hidden border border-[var(--border)]">
+        <div className="bg-card rounded-xl shadow-lg overflow-hidden border border-border">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="bg-[var(--primary)] text-[var(--primary-foreground)]">
+                <tr className="bg-primary text-primary-foreground">
                   <th className="py-3 px-2 md:px-4 text-center font-semibold w-12">#</th>
                   <th className="py-3 px-2 md:px-4 text-left font-semibold">Ekipa</th>
                   <th className="py-3 px-2 md:px-4 text-center font-semibold">U</th>
@@ -61,46 +61,45 @@ export default function Home() {
                   <tr
                     key={team.team}
                     className={`
-                      border-b border-[var(--border)] transition-colors
-                      ${index === 0 ? "bg-[#fef3c7]" : ""}
-                      ${index === 1 ? "bg-[#f1f5f9]" : ""}
-                      ${index === 2 ? "bg-[#fed7aa]" : ""}
-                      ${index >= standings.length - 2 ? "bg-[#fee2e2]" : ""}
-                      hover:bg-[var(--muted)]
+                      border-b border-border transition-colors hover:bg-muted
+                      ${index === 0 ? "bg-gold" : ""}
+                      ${index === 1 ? "bg-silver" : ""}
+                      ${index === 2 ? "bg-bronze" : ""}
+                      ${index >= standings.length - 2 ? "bg-danger" : ""}
                     `}
                   >
                     <td className="py-3 px-2 md:px-4 text-center">
                       <span
                         className={`
                           inline-flex items-center justify-center w-7 h-7 rounded-full font-bold text-sm
-                          ${index === 0 ? "bg-[var(--accent)] text-[var(--foreground)]" : ""}
+                          ${index === 0 ? "bg-accent text-foreground" : ""}
                           ${index === 1 ? "bg-gray-400 text-white" : ""}
                           ${index === 2 ? "bg-amber-600 text-white" : ""}
-                          ${index > 2 ? "text-[var(--muted-foreground)]" : ""}
+                          ${index > 2 ? "text-muted-foreground" : ""}
                         `}
                       >
                         {index + 1}
                       </span>
                     </td>
-                    <td className="py-3 px-2 md:px-4 text-left font-medium text-[var(--foreground)] text-sm md:text-base">
+                    <td className="py-3 px-2 md:px-4 text-left font-medium text-foreground text-sm md:text-base">
                       {team.team}
                     </td>
-                    <td className="py-3 px-2 md:px-4 text-center text-[var(--muted-foreground)]">
+                    <td className="py-3 px-2 md:px-4 text-center text-muted-foreground">
                       {team.played}
                     </td>
                     <td className="py-3 px-2 md:px-4 text-center text-green-600 font-medium">
                       {team.wins}
                     </td>
-                    <td className="py-3 px-2 md:px-4 text-center text-[var(--muted-foreground)]">
+                    <td className="py-3 px-2 md:px-4 text-center text-muted-foreground">
                       {team.draws}
                     </td>
                     <td className="py-3 px-2 md:px-4 text-center text-red-500">
                       {team.losses}
                     </td>
-                    <td className="py-3 px-2 md:px-4 text-center text-[var(--muted-foreground)] hidden sm:table-cell">
+                    <td className="py-3 px-2 md:px-4 text-center text-muted-foreground hidden sm:table-cell">
                       {team.gf}
                     </td>
-                    <td className="py-3 px-2 md:px-4 text-center text-[var(--muted-foreground)] hidden sm:table-cell">
+                    <td className="py-3 px-2 md:px-4 text-center text-muted-foreground hidden sm:table-cell">
                       {team.ga}
                     </td>
                     <td
@@ -109,13 +108,13 @@ export default function Home() {
                           ? "text-green-600"
                           : team.gd < 0
                           ? "text-red-500"
-                          : "text-[var(--muted-foreground)]"
+                          : "text-muted-foreground"
                       }`}
                     >
                       {team.gd > 0 ? `+${team.gd}` : team.gd}
                     </td>
                     <td className="py-3 px-2 md:px-4 text-center">
-                      <span className="inline-flex items-center justify-center min-w-8 h-8 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg font-bold">
+                      <span className="inline-flex items-center justify-center min-w-8 h-8 bg-primary text-primary-foreground rounded-lg font-bold">
                         {team.points}
                       </span>
                     </td>
@@ -126,19 +125,19 @@ export default function Home() {
           </div>
         </div>
 
-        <footer className="mt-6 text-center text-sm text-[var(--muted-foreground)]">
+        <footer className="mt-6 text-center text-sm text-muted-foreground">
           <div className="flex flex-wrap justify-center gap-4 mb-2">
             <span className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded bg-[#fef3c7]"></span> 1. mjesto
+              <span className="w-3 h-3 rounded bg-gold"></span> 1. mjesto
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded bg-[#f1f5f9]"></span> 2. mjesto
+              <span className="w-3 h-3 rounded bg-silver"></span> 2. mjesto
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded bg-[#fed7aa]"></span> 3. mjesto
+              <span className="w-3 h-3 rounded bg-bronze"></span> 3. mjesto
             </span>
             <span className="flex items-center gap-2">
-              <span className="w-3 h-3 rounded bg-[#fee2e2]"></span> Ispadanje
+              <span className="w-3 h-3 rounded bg-danger"></span> Ispadanje
             </span>
           </div>
           <p>U = Utakmice | P = Pobjede | R = Remi | I = Izgubljene | GF = Golovi za | GA = Golovi protiv</p>
